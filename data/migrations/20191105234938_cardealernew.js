@@ -1,6 +1,6 @@
 // changes to make
 exports.up = function(knex) {
-    return knex.schema.createTable('cardealer', table => {
+    return knex.schema.createTable('cardealernew', table => {
         table.increments(); // creates primary key called id
         table.string('vin', 50).notNullable();
         table.string('make', 20).notNullable(); // creates a text field called make
@@ -14,5 +14,5 @@ exports.up = function(knex) {
 
 // how to undo changes
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists('cardealer')
+  return knex.schema.dropTableIfExists('cardealernew')
 };
