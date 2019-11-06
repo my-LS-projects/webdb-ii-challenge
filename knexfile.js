@@ -5,14 +5,14 @@ module.exports = {
   development: {
     client: 'sqlite3', // DBMS driver to use 
     connection: { // location or path of our db
-      filename: '../data/car-dealer.db3'
+      filename: './data/car-dealer.db3'
     },
     useNullAsDefault: true, // required only for SQLite
     migrations: {
-      directory: './data/migrations/'
+      directory: './data/migrations'
     },
     seeds: {
-      directory: './data/seeds/'
+      directory: './data/seeds'
     }
   },
   
